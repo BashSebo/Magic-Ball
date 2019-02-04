@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    <h1 align="center">  Magic 8 Ball </h1>
+    </ion-title>
+    <ion-buttons end>
+      <button (click)="gotoAbout()">
+        <ion-icon name="help"></ion-icon>
+        <!-- About
+        <!-- <ion-icon name="person"></ion-icon> -->
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card (click)="giveAnswer()">
+
+    <ion-card-header>
+      <h3 align="center"> Ask. Tap. Wisdom. </h3>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img id='img8ball' src="assets/imgs/magic8ball.gif"
+        [ngClass]="cssClass" alt="magic 8 ball">
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
